@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/stilo.css">
+    <title>Aplicando Sass</title>
+</head>
+<body>
+<header class="header">
+    <!------------- Mi carousel ------------->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="imagenes/menu multimedia.jpg" class="d-block w-100 carousel" alt="IMagen de un Chef">
+    </div>
+    <div class="carousel-item">
+        <img src="imagenes/menu2.jpg" class="d-block w-100 carousel " alt="Imagen2">
+    </div>
+    <div class="carousel-item">
+        <img src="imagenes/menu1.jpg" class="d-block w-100 carousel  " alt="IMagen de Carne">
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./html/Multimedia.html">Multimedia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Catalogo</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Asistencia </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Chat</a></li>
+                <li><a class="dropdown-item" href="#">Contactenos</a></li>
+                <li><hr class="dropdown-divider">Recetas</li>
+                <li><a class="dropdown-item" href="#">Ayuda</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Carrito</a></li>
+            </ul>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex mb-3">
+        <div class="p-2 content01">
+            <h2>Historia</h2>
+            <img class="cortesFinos" src="./imagenes/historia.jpg" alt="">
+            <p>
+                Somos una empresa guatemalteca con experiencia en Carnes Importadas y
+                Nacionales. Oficialmente iniciamos operaciones en junio del año 2004
+                cubriendo el segmento Food Service. Con el pasar del tiempo,
+                complaciendo a nuestros clientes, hemos ganado mercado gracias a nuestro
+                excelente servicio, precio y calidad. Hoy en día nuestra empresa cuenta
+                con una infraestructura que nos permite ofrecer el servicio que el
+                cliente necesita del mercado Food Service importando directamente de los
+                Estados Unidos de América, contando con transporte refrigerado y extensa
+                capacidad de almacenaje, además de una amplia gama de productos. Lo
+                invitamos a ser parte de la historia de este grupo de empresas
+                apasionadas por el buen gusto y la mejor calidad, ofreciendo sin lugar a
+                duda, productos 100% garantizados.Contamos con un grupo de vendedores
+                dispuestos a ofrecer el mejor servicio. gtacias
+            </p>
+        </div>
+        <div class="p-2 content01">
+        <img class="cortesFinos" src="imagenes/covermeat.jpg" alt="imagen res">
+        <h2> Que son Los Cortes Finos? </h2>
+        <p> Corte fino es un término usado en psicología y filosofía paradescribir
+            la capacidad de encontrar patrones en eventos basados solo en "capas
+            delgadas", o ventanas estrechas, de experiencia. La carne de res
+            contiene los beneficios ya conocidos, además de ello nosotros nos
+            aseguramos de brindar la mayor calidad por medio de un proceso de
+            matanza TIF el sello TIF es sinónimo de excelencia. </p>
+            <div>
+                <div class="card content01" style="width: 25rem;">
+                    <h2>Mariscos</h2>
+                    <img src="imagenes/Mar.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">Consumir pescados y mariscos es la mejor manera de aportar valor
+                        nutricional a nuestro organismo, ya que son considerados como una
+                        magnífica fuente de proteínas y de ácidos grasos como el Omega 3,
+                        fundamentales para proporcionar múltiples beneficios a la salud y
+                        disminuir problemas cardiovasculares</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="d-flex mb-3">
+        <div class="me-auto p-2 content01">
+        <h2>Sabes algo de la Carne de res?</h2>
+    <p>Nuestro animal favorito para el asador, consta de distintas piezas que
+        se clasifican comercialmente dependiendo de su calidad, su contenido en
+        grasa, tejido conjuntivo, etc. Su preparación varía muchísimo, según el
+        resultado que se quiera lograr a la hora de cocinarlo y aquí te damos
+        una breve guía para que te animes a experimentar</p>
+        <img class=cortesFinos src="imagenes/vaca1.jpg" alt="partes de la vaca">
+        <div class="card-group">
+            <div class="card content01 ">
+            <img src="imagenes/t-bone.jpg" class="card-img-top img" alt="...">
+            <div class="card-body ">
+                <h5 class="card-title">T bone</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted text">Premiun</small></p>
+            </div>
+            </div>
+            <div class="card content01 ">
+            <img src="imagenes/lomo.pg.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted text">Premiun</small></p>
+            </div>
+            </div>
+            <div class="card content01">
+            <img src="imagenes/Rib_Eye_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted text">Premiun</small></p>
+            </div>
+            </div>
+        </div>
+    </div>   
+    </div>
+
+    <div class="d-flex mb-3">
+        <div class="p-2 content01">
+        <h2>Carne de Cerdo</h2>
+        <p>uizá de todas las proteínas de origen animal, la carne de cerdo es una
+            de las más importantes ya que es un ingrediente fundamental para
+            elaboración de muchos platos típicos de la región. La carne de cerdo es
+            una proteína que además de ser muy deliciosa, aporta proteínas,
+            vitaminas y minerales, pero a pesar de esto existen muchos mitos que
+            encasillan a la carne de cerdo como un alimento poco balanceado lo que
+            hace que se consuma con cierta desconfianza.</p> 
+            <img class="img" src="./imagenes/cerdoCortesjpg.jpg" alt="">
+        </div>
+    </div>
+</header>
+        <footer class="footer">
+            <div class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-dark" role="status">
+            <span class="visually-hidden">Loading...</span>
+            </div>
+            <h3>Redes Sociales</h3>
+            <h3>
+            Sitio Web by Erick Fernando Garcia Martinez - Todos los derechos
+            reservados</h3>
+            <a href="https://www.instagram.com/" target="_blank">
+            <span
+                class="iconify iconosFooter"
+                data-icon="akar-icons:instagram-fill"
+            ></span>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+            <span
+                class="iconify iconosFooter"
+                data-icon="ant-design:facebook-filled"
+            ></span>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+            <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
+            </a>
+        </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+</html>

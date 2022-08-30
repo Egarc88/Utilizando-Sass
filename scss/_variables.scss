@@ -1,0 +1,7 @@
+$colorFunte:#f4991a;
+$Subtitulos: red;
+@mixin Card {
+    background-image: url(../imagenes/fondo2.jpg);
+    color: white;
+    text-align: center;
+}
